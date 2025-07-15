@@ -18,37 +18,35 @@ export default function ImageCarousel() {
 
     timer.current = setInterval(() => {
       slider.current?.next();
-    }, 3000); // Slide every 3 seconds
+    }, 3000);
 
-    return () => {
-      clearInterval(timer.current);
-    };
+    return () => clearInterval(timer.current);
   }, [slider]);
 
   return (
     <div
       ref={sliderRef}
-      className="keen-slider rounded-xl overflow-hidden my-8 shadow-lg max-w-4xl mx-auto"
+      className="keen-slider h-full w-full absolute top-0 left-0 z-0"
     >
       <div className="keen-slider__slide">
         <img
           src="/images/camping1.jpg"
           alt="Camping 1"
-          className="w-full h-128 object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="keen-slider__slide">
         <img
           src="/images/camping2.jpg"
           alt="Camping 2"
-          className="w-full h-128 object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
       <div className="keen-slider__slide">
         <img
           src="/images/camping3.jpg"
           alt="Camping 3"
-          className="w-full h-128 object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
     </div>
