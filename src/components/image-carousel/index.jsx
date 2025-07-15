@@ -26,29 +26,17 @@ export default function ImageCarousel() {
   return (
     <div
       ref={sliderRef}
-      className="keen-slider h-full w-full absolute top-0 left-0 z-0"
+      className="keen-slider h-screen w-screen absolute top-0 left-0 z-0"
     >
-      <div className="keen-slider__slide">
-        <img
-          src="/images/camping1.jpg"
-          alt="Camping 1"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <img
-          src="/images/camping2.jpg"
-          alt="Camping 2"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="keen-slider__slide">
-        <img
-          src="/images/camping3.jpg"
-          alt="Camping 3"
-          className="w-full h-full object-cover"
-        />
-      </div>
+      {["camping1.jpg", "camping2.jpg", "camping3.jpg"].map((img, i) => (
+        <div key={i} className="keen-slider__slide">
+          <img
+            src={`/images/${img}`}
+            alt={`Camping ${i + 1}`}
+            className="w-full h-screen object-cover brightness-75"
+          /> 
+        </div>
+      ))}
     </div>
   );
 }

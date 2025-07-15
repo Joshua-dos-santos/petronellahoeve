@@ -1,14 +1,16 @@
 import ImageCarousel from "../../components/image-carousel";
+import Navbar from "../../components/navbar";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#F4F7FA] text-[#333] font-sans">
-      <main className="flex-grow">
-        {/* Hero Section with Carousel Background */}
-        <div className="relative h-[92.5vh] w-full">
+    <div className="flex flex-col h-screen overflow-hidden bg-[#F4F7FA] text-[#333] font-sans">
+      <Navbar />
+
+      <main className="flex-grow pt-16">
+        <div className="relative h-[calc(100vh-4rem)] w-full">
           <ImageCarousel />
 
-          <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-4">
+          <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-4 z-10">
             <h1 className="text-5xl font-extrabold text-white drop-shadow-md">
               Petronellahoeve
             </h1>
@@ -19,9 +21,10 @@ export default function HomePage() {
         </div>
       </main>
 
-      <footer className="bg-[#565857] text-white text-center py-6">
+      <footer className="bg-[#565857] text-white text-center py-4 absolute bottom-0 w-full z-20">
         <p className="text-sm tracking-wide">
-          &copy; {new Date().getFullYear()} Petronellahoeve – Geniet van de rust en natuur
+          &copy; {new Date().getFullYear()} Petronellahoeve – Geniet van de rust
+          en natuur
         </p>
       </footer>
     </div>
