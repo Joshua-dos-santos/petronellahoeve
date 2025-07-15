@@ -4,7 +4,6 @@ import Navbar from "../../components/navbar";
 export default function HomePage() {
   return (
     <div className="flex flex-col h-screen overflow-hidden bg-[#F4F7FA] text-[#333] font-sans">
-      <Navbar />
 
       <main className="flex-grow pt-16">
         <div className="relative h-[calc(100vh-4rem)] w-full">
