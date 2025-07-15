@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import HomePage from "./pages/homepage";
 import Omgeving from "./pages/omgeving";
-import Contact from "./pages/Contact";
+import Contact from "./pages/contact";
 import OverOns from "./pages/over-ons";
 
 export default function App() {
