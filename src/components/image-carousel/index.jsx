@@ -18,7 +18,7 @@ export default function ImageCarousel() {
 
     timer.current = setInterval(() => {
       slider.current?.next();
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(timer.current);
   }, [slider]);
