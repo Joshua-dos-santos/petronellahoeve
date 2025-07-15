@@ -1,12 +1,7 @@
-import './App.css'
+import HomePage from "./pages/homepage";
 
 function App() {
-
-  return (
-    <>
-    <h1 className='text-2xl text-blue-500'>Vite + React + Tailwind CSS</h1>
-    </>
-  )
+  return <HomePage />;
 }
 
-export default App
+export default App;
