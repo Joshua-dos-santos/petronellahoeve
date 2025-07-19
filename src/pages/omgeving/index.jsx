@@ -16,8 +16,8 @@ export default function Omgeving() {
 
         <p className="mb-6 text-base leading-relaxed">
           Je kunt direct vanaf de camping aansluiten op verschillende{" "}
-          <strong>knooppuntroutes</strong> voor wandelen en fietsen.
-          Populaire gebieden zijn onder andere:
+          <strong>knooppuntroutes</strong> voor wandelen en fietsen. Populaire
+          gebieden zijn onder andere:
         </p>
 
         <ul className="mb-8 space-y-3 pl-5 list-none">

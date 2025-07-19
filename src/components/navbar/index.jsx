@@ -20,7 +20,11 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl md:text-3xl font-extrabold tracking-tight">
-          <Link to="/" className="hover:opacity-90 transition" onClick={() => setMenuOpen(false)}>
+          <Link
+            to="/"
+            className="hover:opacity-90 transition"
+            onClick={() => setMenuOpen(false)}
+          >
             Petronellahoeve
           </Link>
         </div>

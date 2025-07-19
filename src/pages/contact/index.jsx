@@ -10,8 +10,8 @@ export default function Contact() {
 
         {/* Friendly intro */}
         <p className="mb-6 text-base leading-relaxed">
-          Heb je vragen over onze minicamping, beschikbaarheid of tarieven?
-          Neem gerust contact met ons op – we helpen je graag verder!
+          Heb je vragen over onze minicamping, beschikbaarheid of tarieven? Neem
+          gerust contact met ons op – we helpen je graag verder!
         </p>
 
         {/* Highlighted WhatsApp notice */}
@@ -46,7 +46,8 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="text-blue-600 underline hover:text-blue-800"
                 >
-                  Burgemeester Aartslaan 45<br />
+                  Burgemeester Aartslaan 45
+                  <br />
                   5571 TR Bergeijk, Nederland
                 </a>
               </p>
