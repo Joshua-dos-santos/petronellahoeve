@@ -5,8 +5,15 @@ export default function HomePage() {
     <div className="flex flex-col h-screen overflow-hidden bg-[#F4F7FA] text-[#333] font-sans relative">
       <main className="flex-grow pt-16">
         <div className="relative h-full w-full">
-          <ImageCarousel />
-
+          <ImageCarousel
+            images={[
+              "/images/camping1.jpg",
+              "/images/camping2.jpg",
+              "/images/camping3.jpg",
+            ]}
+            height="h-screen"
+            autoplay={true}
+          />
           <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center px-6 z-10">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg leading-tight">
               Petronellahoeve
