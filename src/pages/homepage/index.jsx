@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ImageCarousel from "../../components/image-carousel";
 
 export default function HomePage() {
@@ -21,12 +22,12 @@ export default function HomePage() {
             <p className="text-lg md:text-xl mt-3 text-white max-w-xl drop-shadow-sm">
               Rust, natuur en buitenleven in het mooie Bergeijk
             </p>
-            <a
-              href="/over-ons"
+            <Link
+              to="/over-ons"
               className="mt-6 inline-block bg-[#FFC847] hover:bg-[#e6b73a] text-black font-semibold px-6 py-2 rounded-full transition shadow-md"
             >
               Bekijk de camping
-            </a>
+            </Link>
           </div>
         </div>
       </main>
