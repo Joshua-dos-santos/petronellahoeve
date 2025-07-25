@@ -14,21 +14,25 @@ export default function OverOns() {
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-[#333] pt-24 px-4 sm:px-6 md:px-8 flex justify-center">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-xl p-6 sm:p-10">
-        {/* Heading */}
+        {/* SEO-optimized heading */}
         <h1 className="text-4xl font-extrabold text-[#FFC847] mb-8 tracking-tight">
-          Over ons
+          Over Minicamping Petronellahoeve
         </h1>
 
-        {/* Intro text */}
+        {/* Keyword-rich introduction */}
         <p className="mb-6 text-base leading-relaxed">
-          <strong>Minicamping De Petronellahoeve</strong> is een klassieke
-          boerderijcamping in de bosrijke omgeving van Bergeijk. We beschikken
-          over ongeveer 15 ruime staanplaatsen zonder vaste afmetingen –{" "}
-          <em>voldoende ruimte en comfort staan centraal</em>.
+          <strong>Minicamping De Petronellahoeve</strong> is een sfeervolle
+          boerderijcamping gelegen in het groene buitengebied van{" "}
+          <strong>Bergeijk</strong>. Met circa 15 ruime staanplaatsen zonder
+          vaste afmetingen bieden we een rustige, comfortabele kampeerervaring
+          midden in de natuur.
         </p>
 
-        {/* ✅ Image Carousel */}
+        {/* Image Carousel with descriptive alt text */}
         <div className="mb-10">
+          <h2 className="text-lg font-semibold mb-4">
+            Sfeerimpressie van onze camping
+          </h2>
           <ImageCarousel
             images={galleryImages}
             height="h-[400px]"
@@ -38,15 +42,17 @@ export default function OverOns() {
           />
         </div>
 
-        {/* Amenities */}
-        <h2 className="text-lg font-semibold mb-4">Voorzieningen</h2>
+        {/* Amenities section */}
+        <h2 className="text-lg font-semibold mb-4">
+          Voorzieningen op onze camping
+        </h2>
         <ul className="mb-8 space-y-3 pl-5 list-none">
           {[
             "6 Ampère stroom",
             "Douches: €0.50",
             "Toiletten beschikbaar",
             "Gratis Wifi bij het sanitair",
-            "Huisdieren welkom: €1.00",
+            "Huisdieren zijn welkom voor een bedrag van €1.00",
             "Seizoenplaatsen beschikbaar",
             "Staplaatsen zonder vaste afmetingen",
           ].map((item, index) => (
@@ -57,20 +63,20 @@ export default function OverOns() {
           ))}
         </ul>
 
-        {/* SVR Info */}
+        {/* SVR block with keyword context */}
         <div className="bg-[#FFF2CC] border border-[#FFE08A] rounded-md p-4 text-sm leading-relaxed">
-          We zijn aangesloten bij{" "}
+          Wij zijn trots aangesloten bij{" "}
           <a
             href="https://www.svr.nl"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#FFC847] underline hover:text-[#e6b73a]"
           >
-            SVR (Stichting Vrije Recreatie)
+            Stichting Vrije Recreatie (SVR)
           </a>
-          . <br />
+          , een organisatie voor kamperen bij de boer. <br />
           Geen lid? Geen probleem – neem gerust contact met ons op via mail,
-          telefoon of WhatsApp. We vertellen je graag meer!
+          telefoon of WhatsApp voor vragen of reserveringen.
         </div>
       </div>
     </div>

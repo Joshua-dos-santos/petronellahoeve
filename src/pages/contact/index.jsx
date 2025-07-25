@@ -8,10 +8,10 @@ export default function Contact() {
           Contact
         </h1>
 
-        {/* Friendly intro */}
+        {/* SEO-optimized intro */}
         <p className="mb-6 text-base leading-relaxed">
-          Heb je vragen over onze minicamping, beschikbaarheid of tarieven? Neem
-          gerust contact met ons op – we helpen je graag verder!
+          Heb je vragen over onze minicamping in Bergeijk, beschikbaarheid of
+          tarieven? Neem gerust contact met ons op – we helpen je graag verder!
         </p>
 
         {/* Highlighted WhatsApp notice */}
@@ -34,7 +34,7 @@ export default function Contact() {
           {/* Address */}
           <div>
             <h2 className="text-lg font-semibold mb-3">Bezoekadres</h2>
-            <div className="space-y-2 text-base leading-relaxed">
+            <address className="not-italic space-y-2 text-base leading-relaxed">
               <p>
                 <FiMapPin className="inline-block mr-2 text-[#FFC847]" />
                 <strong>Petronellahoeve</strong>
@@ -51,7 +51,7 @@ export default function Contact() {
                   5571 TR Bergeijk, Nederland
                 </a>
               </p>
-            </div>
+            </address>
           </div>
 
           {/* Contact Info */}
