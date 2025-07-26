@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ImageCarousel from "../../components/image-carousel";
 
 export default function HomePage() {
+  useEffect(() => {
+    document.title = "Minicamping Petronellahoeve – Rust & Natuur in Bergeijk";
+    setCanonical("https://petronellahoeve.nl/");
+  }, []);
+
   return (
     <div className="flex flex-col h-screen overflow-hidden bg-[#F4F7FA] text-[#333] font-sans relative">
       <main className="flex-grow pt-16">
@@ -40,4 +46,14 @@ export default function HomePage() {
       </footer>
     </div>
   );
+}
+
+function setCanonical(url) {
+  let link = document.querySelector("link[rel='canonical']");
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", url);
 }

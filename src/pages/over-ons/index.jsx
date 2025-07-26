@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import ImageCarousel from "../../components/image-carousel";
 
 export default function OverOns() {
+  useEffect(() => {
+    document.title = "Over Ons – Minicamping Petronellahoeve";
+    setCanonical("https://petronellahoeve.nl/over-ons");
+  }, []);
+
   const galleryImages = [
     "/images/gallery1.webp",
     "/images/gallery2.webp",
@@ -14,21 +20,14 @@ export default function OverOns() {
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-[#333] pt-24 px-4 sm:px-6 md:px-8 flex justify-center">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-xl p-6 sm:p-10">
-        {/* SEO-optimized heading */}
         <h1 className="text-4xl font-extrabold text-[#FFC847] mb-8 tracking-tight">
           Over Minicamping Petronellahoeve
         </h1>
-
-        {/* Keyword-rich introduction */}
         <p className="mb-6 text-base leading-relaxed">
           <strong>Minicamping De Petronellahoeve</strong> is een sfeervolle
           boerderijcamping gelegen in het groene buitengebied van{" "}
-          <strong>Bergeijk</strong>. Met circa 15 ruime staanplaatsen zonder
-          vaste afmetingen bieden we een rustige, comfortabele kampeerervaring
-          midden in de natuur.
+          <strong>Bergeijk</strong>.
         </p>
-
-        {/* Image Carousel with descriptive alt text */}
         <div className="mb-10">
           <h2 className="text-lg font-semibold mb-4">
             Sfeerimpressie van onze camping
@@ -41,8 +40,6 @@ export default function OverOns() {
             showArrows
           />
         </div>
-
-        {/* Amenities section */}
         <h2 className="text-lg font-semibold mb-4">
           Voorzieningen op onze camping
         </h2>
@@ -62,8 +59,6 @@ export default function OverOns() {
             </li>
           ))}
         </ul>
-
-        {/* SVR block with keyword context */}
         <div className="bg-[#FFF2CC] border border-[#FFE08A] rounded-md p-4 text-sm leading-relaxed">
           Wij zijn trots aangesloten bij{" "}
           <a
@@ -74,11 +69,19 @@ export default function OverOns() {
           >
             Stichting Vrije Recreatie (SVR)
           </a>
-          , een organisatie voor kamperen bij de boer. <br />
-          Geen lid? Geen probleem – neem gerust contact met ons op via mail,
-          telefoon of WhatsApp voor vragen of reserveringen.
+          . Geen lid? Geen probleem – neem gerust contact met ons op.
         </div>
       </div>
     </div>
   );
+}
+
+function setCanonical(url) {
+  let link = document.querySelector("link[rel='canonical']");
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", url);
 }

@@ -1,26 +1,24 @@
+import { useEffect } from "react";
 import MapLocation from "../../components/map-location";
 
 export default function Omgeving() {
+  useEffect(() => {
+    document.title = "Omgeving – Minicamping Petronellahoeve";
+    setCanonical("https://petronellahoeve.nl/omgeving");
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-[#333] pt-24 px-4 sm:px-6 md:px-8 flex justify-center">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-xl p-6 sm:p-10">
         <h1 className="text-4xl font-extrabold text-[#FFC847] mb-8 tracking-tight">
           Omgeving van Minicamping Petronellahoeve
         </h1>
-
         <p className="mb-6 text-base leading-relaxed">
-          Onze <strong>minicamping in Bergeijk</strong> ligt in een prachtige,
-          groene omgeving. Perfect voor natuurliefhebbers, fietsers en
-          wandelaars die willen genieten van rust, ruimte en het buitenleven.
+          Onze <strong>minicamping in Bergeijk</strong> ligt in een prachtige
+          omgeving. Perfect voor natuurliefhebbers, fietsers en wandelaars.
         </p>
-
         <section className="mb-6">
           <h2 className="text-lg font-semibold mb-2">Wandelen en fietsen</h2>
-          <p className="text-base leading-relaxed mb-4">
-            Direct vanaf de camping kun je aansluiten op diverse{" "}
-            <strong>knooppuntroutes</strong>. Enkele populaire natuurgebieden in
-            de omgeving zijn:
-          </p>
           <ul className="space-y-3 pl-5 list-none">
             {[
               "De Malpie",
@@ -35,29 +33,28 @@ export default function Omgeving() {
             ))}
           </ul>
         </section>
-
         <section className="my-8">
           <h2 className="text-lg font-semibold mb-3">Locatie op de kaart</h2>
           <MapLocation />
         </section>
-
         <section>
           <h2 className="text-lg font-semibold mb-3">Dichtbij het centrum</h2>
           <p className="text-base leading-relaxed mb-4">
-            Het gezellige centrum van <strong>Bergeijk</strong> ligt op korte
-            afstand. Hier vind je supermarkten, winkels, horeca, een dorpsplein
-            en regelmatig evenementen of een markt. Ook is er werk te zien van
-            ontwerper <strong>Gerrit Rietveld</strong>, waaronder een park en
-            bushokjes.
-          </p>
-
-          <p className="text-base leading-relaxed">
-            Leuke uitstapjes in de regio zijn onder andere{" "}
-            <strong>Eersel</strong>, <strong>Valkenswaard</strong> en het
-            Belgische <strong>Lommel</strong>.
+            Het centrum van Bergeijk ligt op korte afstand met winkels, horeca,
+            en werk van Gerrit Rietveld.
           </p>
         </section>
       </div>
     </div>
   );
+}
+
+function setCanonical(url) {
+  let link = document.querySelector("link[rel='canonical']");
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", url);
 }
