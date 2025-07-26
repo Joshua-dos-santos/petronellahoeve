@@ -58,6 +58,8 @@ export default function ImageCarousel({
             <img
               src={img}
               alt={`Slide ${i + 1}`}
+              loading="lazy"
+              width={660}
               className="w-full h-full object-cover brightness-75"
             />
           </div>
