@@ -2,13 +2,13 @@ import ImageCarousel from "../../components/image-carousel";
 
 export default function OverOns() {
   const galleryImages = [
-    "/images/gallery1.jpg",
-    "/images/gallery2.jpg",
-    "/images/gallery3.jpg",
-    "/images/gallery4.jpg",
-    "/images/gallery5.jpg",
-    "/images/gallery6.jpg",
-    "/images/gallery7.jpg",
+    "/images/gallery1.webp",
+    "/images/gallery2.webp",
+    "/images/gallery3.webp",
+    "/images/gallery4.webp",
+    "/images/gallery5.webp",
+    "/images/gallery6.webp",
+    "/images/gallery7.webp",
   ];
 
   return (

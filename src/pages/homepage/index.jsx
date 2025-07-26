@@ -8,9 +8,9 @@ export default function HomePage() {
         <div className="relative h-full w-full">
           <ImageCarousel
             images={[
-              "/images/camping1.jpg",
-              "/images/camping2.jpg",
-              "/images/camping3.jpg",
+              "/images/camping1.webp",
+              "/images/camping2.webp",
+              "/images/camping3.webp",
             ]}
             height="h-screen"
             autoplay={true}
