@@ -25,7 +25,7 @@ export default function Navbar() {
             className="hover:opacity-90 transition"
             onClick={() => setMenuOpen(false)}
           >
-            Petronellahoeve
+            Petronella Hoeve
           </Link>
         </div>
 

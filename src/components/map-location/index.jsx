@@ -20,7 +20,7 @@ export default function MapLocation() {
   return (
     <div
       className="w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-md mb-8"
-      aria-label="Locatie van Petronellahoeve op de kaart"
+      aria-label="Locatie van Petronella Hoeve op de kaart"
     >
       <MapContainer
         center={position}
@@ -34,7 +34,7 @@ export default function MapLocation() {
         />
         <Marker position={position} icon={customIcon}>
           <Popup>
-            <strong>Petronellahoeve</strong>
+            <strong>Petronella Hoeve</strong>
             <br />
             Burgemeester Aartslaan 45
             <br />

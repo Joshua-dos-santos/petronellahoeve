@@ -3,7 +3,7 @@ import ImageCarousel from "../../components/image-carousel";
 
 export default function OverOns() {
   useEffect(() => {
-    document.title = "Over Ons – Minicamping Petronellahoeve";
+    document.title = "Over Ons – Minicamping Petronella Hoeve";
     setCanonical("https://petronellahoeve.nl/over-ons");
   }, []);
 
@@ -21,10 +21,10 @@ export default function OverOns() {
     <div className="min-h-screen bg-[#FFF9F0] text-[#333] pt-24 px-4 sm:px-6 md:px-8 flex justify-center">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-xl p-6 sm:p-10">
         <h1 className="text-4xl font-extrabold text-[#FFC847] mb-8 tracking-tight">
-          Over Minicamping Petronellahoeve
+          Over Minicamping Petronella Hoeve
         </h1>
         <p className="mb-6 text-base leading-relaxed">
-          <strong>Minicamping De Petronellahoeve</strong> is een sfeervolle
+          <strong>Minicamping De Petronella Hoeve</strong> is een sfeervolle
           boerderijcamping gelegen in het groene buitengebied van{" "}
           <strong>Bergeijk</strong>.
         </p>

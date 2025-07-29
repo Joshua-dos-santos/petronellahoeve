@@ -3,7 +3,7 @@ import MapLocation from "../../components/map-location";
 
 export default function Omgeving() {
   useEffect(() => {
-    document.title = "Omgeving – Minicamping Petronellahoeve";
+    document.title = "Omgeving – Minicamping Petronella Hoeve";
     setCanonical("https://petronellahoeve.nl/omgeving");
   }, []);
 
@@ -11,7 +11,7 @@ export default function Omgeving() {
     <div className="min-h-screen bg-[#FFF9F0] text-[#333] pt-24 px-4 sm:px-6 md:px-8 flex justify-center">
       <div className="w-full max-w-4xl bg-white shadow-md rounded-xl p-6 sm:p-10">
         <h1 className="text-4xl font-extrabold text-[#FFC847] mb-8 tracking-tight">
-          Omgeving van Minicamping Petronellahoeve
+          Omgeving van Minicamping Petronella Hoeve
         </h1>
         <p className="mb-6 text-base leading-relaxed">
           Onze <strong>minicamping in Bergeijk</strong> ligt in een prachtige

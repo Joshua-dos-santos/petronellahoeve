@@ -4,7 +4,7 @@ import ImageCarousel from "../../components/image-carousel";
 
 export default function HomePage() {
   useEffect(() => {
-    document.title = "Minicamping Petronellahoeve – Rust & Natuur in Bergeijk";
+    document.title = "Minicamping Petronella Hoeve – Rust & Natuur in Bergeijk";
     setCanonical("https://petronellahoeve.nl/");
   }, []);
 
@@ -23,7 +23,7 @@ export default function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex flex-col justify-center items-center text-center px-6 z-10">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg leading-tight">
-              Petronellahoeve
+              Petronella Hoeve
             </h1>
             <p className="text-lg md:text-xl mt-3 text-white max-w-xl drop-shadow-sm">
               Rust, natuur en buitenleven in het mooie Bergeijk
@@ -40,8 +40,8 @@ export default function HomePage() {
 
       <footer className="bg-[#444] text-white text-center py-4 w-full z-20 absolute bottom-0 left-0 text-sm shadow-inner">
         <p>
-          &copy; {new Date().getFullYear()} Petronellahoeve – Geniet van de rust
-          en natuur
+          &copy; {new Date().getFullYear()} Petronella Hoeve – Geniet van de
+          rust en natuur
         </p>
       </footer>
     </div>

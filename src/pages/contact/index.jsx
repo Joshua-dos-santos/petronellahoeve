@@ -3,7 +3,7 @@ import { FiPhone, FiMail, FiMapPin, FiMessageSquare } from "react-icons/fi";
 
 export default function Contact() {
   useEffect(() => {
-    document.title = "Contact – Minicamping Petronellahoeve";
+    document.title = "Contact – Minicamping Petronella Hoeve";
     setCanonical("https://petronellahoeve.nl/contact");
   }, []);
 
@@ -35,7 +35,7 @@ export default function Contact() {
             <address className="not-italic space-y-2 text-base leading-relaxed">
               <p>
                 <FiMapPin className="inline-block mr-2 text-[#FFC847]" />
-                <strong>Petronellahoeve</strong>
+                <strong>Petronella Hoeve</strong>
               </p>
               <p>
                 <a
