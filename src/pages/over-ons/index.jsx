@@ -15,6 +15,7 @@ export default function OverOns() {
     "/images/gallery5.webp",
     "/images/gallery6.webp",
     "/images/gallery7.webp",
+    "/images/gallery8.webp",
   ];
 
   return (
