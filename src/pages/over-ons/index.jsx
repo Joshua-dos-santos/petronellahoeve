@@ -66,7 +66,7 @@ export default function OverOns() {
             href="https://www.svr.nl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#FFC847] underline hover:text-[#e6b73a]"
+            className="text-[#9EB7E5] underline hover:text-[#7CA1D4]"
           >
             Stichting Vrije Recreatie (SVR)
           </a>

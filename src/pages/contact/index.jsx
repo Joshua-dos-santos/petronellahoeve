@@ -13,15 +13,17 @@ export default function Contact() {
         <h1 className="text-4xl font-extrabold text-[#FFC847] mb-8 tracking-tight">
           Contact
         </h1>
+
         <p className="mb-6 text-base leading-relaxed">
           Heb je vragen? Neem gerust contact met ons op!
         </p>
+
         <div className="bg-[#FFF2CC] border border-[#FFE08A] p-4 rounded-md text-sm mb-10">
           Voor snelle vragen kun je ons bereiken via <strong>WhatsApp</strong>{" "}
           op{" "}
           <a
             href="https://wa.me/31628054966"
-            className="text-blue-700 underline hover:text-blue-900"
+            className="text-[#9EB7E5] underline hover:text-[#7CA1D4]"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -29,7 +31,9 @@ export default function Contact() {
           </a>
           .
         </div>
+
         <div className="grid gap-10 md:grid-cols-2">
+          {/* Address */}
           <div>
             <h2 className="text-lg font-semibold mb-3">Bezoekadres</h2>
             <address className="not-italic space-y-2 text-base leading-relaxed">
@@ -42,7 +46,7 @@ export default function Contact() {
                   href="https://www.google.com/maps?q=Burgemeester+Aartslaan+45,+Bergeijk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 underline hover:text-blue-800"
+                  className="text-[#9EB7E5] underline hover:text-[#7CA1D4]"
                 >
                   Burgemeester Aartslaan 45
                   <br />
@@ -51,13 +55,18 @@ export default function Contact() {
               </p>
             </address>
           </div>
+
+          {/* Contact Info */}
           <div>
             <h2 className="text-lg font-semibold mb-3">Contactgegevens</h2>
             <div className="space-y-3 text-base leading-relaxed">
               <p>
                 <FiPhone className="inline-block mr-2 text-[#FFC847]" />
                 <strong>Telefoon:</strong>{" "}
-                <a href="tel:+31497571629" className="text-blue-600 underline">
+                <a
+                  href="tel:+31497571629"
+                  className="text-[#9EB7E5] underline hover:text-[#7CA1D4]"
+                >
                   +31 (0)497 571629
                 </a>
               </p>
@@ -66,8 +75,9 @@ export default function Contact() {
                 <strong>WhatsApp:</strong>{" "}
                 <a
                   href="https://wa.me/31628054966"
-                  className="text-blue-600 underline"
+                  className="text-[#9EB7E5] underline hover:text-[#7CA1D4]"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   +31 (0)6 28054966
                 </a>
@@ -77,7 +87,7 @@ export default function Contact() {
                 <strong>Email:</strong>{" "}
                 <a
                   href="mailto:petronellahoeve@hetnet.nl"
-                  className="text-blue-600 underline"
+                  className="text-[#9EB7E5] underline hover:text-[#7CA1D4]"
                 >
                   petronellahoeve@hetnet.nl
                 </a>
