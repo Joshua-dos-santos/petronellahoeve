@@ -7,16 +7,12 @@ export default function OverOns() {
     setCanonical("https://petronellahoeve.nl/over-ons");
   }, []);
 
-  const galleryImages = [
-    "/images/gallery1.webp",
-    "/images/gallery2.webp",
-    "/images/gallery3.webp",
-    "/images/gallery4.webp",
-    "/images/gallery5.webp",
-    "/images/gallery6.webp",
-    "/images/gallery7.webp",
-    "/images/gallery8.webp",
-  ];
+  const galleryImages = Object.values(
+    import.meta.glob("/public/images/gallery/*.webp", {
+      eager: true,
+      import: "default",
+    })
+  );
 
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-[#333] pt-24 px-4 sm:px-6 md:px-8 flex justify-center">
